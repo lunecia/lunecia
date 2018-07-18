@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #555;
+}
+html {background: #fff}
+.wrapper {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.container {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	transition: .5s;
+}
+p {line-height: 1.5;}
+a:hover {color: #000;}
+header {
+	padding: 50px 0;
+	vertical-align: baseline;
+	position: relative;
+}
+.logo {
+	font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.social {
+	position: absolute;
+	right: 0;
+	top: 42%;
+	list-style: none;
+	width: 10%;
+	text-align: right;
+}
+.social li {
+	display: inline-block;
+    background-color: #555;
+    transform: scale(0.2);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0;
+}
+.social li a {
+	display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: transparent;
+    margin: 0px;
+    opacity: 0;
+}
+.social:hover li:nth-child(1) {
+	transform: scale(1) translateX(-19px);
+	transition: 0.2s ease transform 0.05s;
+}
+.social:hover li:nth-child(2) {
+	transform: scale(1) translateX(-11px);
+	transition: 0.2s ease transform 0.1s;
+}
+.social:hover li:nth-child(3) {
+	transform: scale(1) translateX(-3px);
+	transition: 0.2s ease transform 0.15s;
+}
+.social:hover li a {opacity: 1;}
+.social:hover li a:hover {
+	transform: scale(1.2);
+}
+.social li a.fb {
+	background: #4267b2;
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.social li a.ig {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.social li a.medium {
+	background: #03a87c;
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.box {
+	margin: 20px 0;
+}
+.box:nth-child(1) {margin-top: 0;}
+@media screen and (max-width: 1024px) {
+	.social {width: 20%;}
+	.social li:nth-child(1) {
+		transform: scale(1) translateX(-19px);
+		transition: 0.2s ease transform 0.05s;
+	}
+	.social li:nth-child(2) {
+		transform: scale(1) translateX(-11px);
+		transition: 0.2s ease transform 0.1s;
+	}
+	.social li:nth-child(3) {
+		transform: scale(1) translateX(-3px);
+		transition: 0.2s ease transform 0.15s;
+	}
+	.social li a {opacity: 1;}
+}
+
+
+
+.quote-page {width: 100vw ;overflow: hidden;}
+.quote-page .container {
+    width: 80%;
+    margin: 5% auto;
+}
+.quote-page h1 {
+	text-align: center;
+    font-size: 42px;
+    line-height: 2;
+}
+.quote-page p {line-height: 3;}
+.quote-page .quote {
+    font-size: 24px;
+    line-height: 2; }
+.quote-page .quote  span {
+        transition: filter .2s ease; }
+.quote-page .quote  span.text {
+        -webkit-filter: blur(0);
+        filter: blur(0); }
+.quote-page .quote .blank {
+        display: inline-block;
+        position: relative;
+        line-height: 2; }
+.quote-page .quote .blank label {
+            position: absolute;
+            font-size: 20px;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            text-align: center;
+            transition: transform .2s ease;
+            cursor: text;
+            line-height: 1.5;
+        }
+.quote-page .quote .blank  input {
+            font-size: inherit;
+            min-width: 120px;
+            border: 0px solid transparent;
+            border-bottom: .1em solid black;
+            padding: 0 .25em;
+            margin: 0;
+            background: transparent;
+            text-align: center;
+            border-radius: 0; }
+.quote-page .quote .blank  input:placeholder-shown + label {
+                transform: translateY(-50%);
+            }
+.quote-page .quote .blank  input:not(:placeholder-shown) + label,
+.quote-page .quote .blank  input:focus + label {
+                transform: translateY(15px);
+                color: #777;
+                font-size: 18px;
+            }
+.quote-page .quote .blank  input:focus + label {
+                color: skyblue;
+                font-size: 14px;
+                line-height: 2;
+            }
+.quote-page .quote .blank  input:focus {
+                outline: none;
+                background: skyblue;
+            }
+.quote-page .quote .blank  input.original {
+                display: none;
+            }
+.quote-page .buttons {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+.quote-page .buttons button {
+        border: none;
+        font-size: 24px;
+        background: #efefef;
+        padding: 5px 10px;
+        cursor: pointer;
+        flex-grow: 1;
+        margin-left: 10px; }
+.quote-page .buttons button:hover,
+.quote-page .buttons button:focus {
+            background: salmon;
+            outline: none;
+        }
+.quote-page .buttons button:active {
+            background: salmon;
+        }
+.quote-page .buttons button[type=submit] {
+            background: black;
+            color: white;
+            font-weight: bold;
+            margin-left: 0;
+            display: none;
+            font-size: 26px;
+            letter-spacing: 2px;
+            -webkit-font-smoothing: antialiased; }
+.quote-page .buttons button[type=submit]:hover,
+.quote-page .buttons button[type=submit]:focus {
+                background: salmon;
+                outline: none;
+            }
+.quote-page .buttons button[type=submit]:active {
+                background: salmon;
+            }
+.quote-page .buttons button.hide-original {
+            display: none;
+        }
+.quote-page .editing .quote span.text {
+            -webkit-filter: blur(6px);
+            filter: blur(6px);
+        }
+.quote-page .editing .buttons button {display: none;}
+.quote-page .editing .buttons button[type="submit"] {
+                display: block;
+            }
+.quote-page .original-shown .quote .blank label {
+                display: none;
+            }
+.quote-page .original-shown .quote .blank input.original {
+                    display: block;
+                }
+.quote-page .original-shown .quote .blank input.entry {
+                    display: none;
+                }
+.quote-page .original-shown .buttons button.hide-original {
+                display: block;
+            }
+.quote-page .original-shown .buttons button.show-original {
+                display: none;
+            }
+
+
+

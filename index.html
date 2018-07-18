@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Hi! I'm Lubia. Pleased to meet you :)">
+	<meta name="author" content="Lubia">
+	<title>LUBIA</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css">
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #555;
+}
+html {background: #fff}
+.wrapper {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.container {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	transition: .5s;
+}
+p {line-height: 1.5;}
+a:hover {color: #000;}
+header {
+	padding: 50px 0;
+	vertical-align: baseline;
+	position: relative;
+}
+.logo {
+	font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.social {
+	position: absolute;
+	right: 0;
+	top: 42%;
+	list-style: none;
+	width: 10%;
+	text-align: right;
+}
+.social li {
+	display: inline-block;
+    background-color: #555;
+    transform: scale(0.2);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0;
+}
+.social li a {
+	display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: transparent;
+    margin: 0px;
+    opacity: 0;
+}
+.social:hover li:nth-child(1) {
+	transform: scale(1) translateX(-19px);
+	transition: 0.2s ease transform 0.05s;
+}
+.social:hover li:nth-child(2) {
+	transform: scale(1) translateX(-11px);
+	transition: 0.2s ease transform 0.1s;
+}
+.social:hover li:nth-child(3) {
+	transform: scale(1) translateX(-3px);
+	transition: 0.2s ease transform 0.15s;
+}
+.social:hover li a {opacity: 1;}
+.social:hover li a:hover {
+	transform: scale(1.2);
+}
+.social li a.fb {
+	background: #4267b2;
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.social li a.ig {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.social li a.medium {
+	background: #03a87c;
+	transition: 0.2s ease opacity 0.05s, 0.1s ease transform;
+}
+.box {
+	margin: 20px 0;
+}
+.box:nth-child(1) {margin-top: 0;}
+@media screen and (max-width: 1024px) {
+	.social {width: 20%;}
+	.social li:nth-child(1) {
+		transform: scale(1) translateX(-19px);
+		transition: 0.2s ease transform 0.05s;
+	}
+	.social li:nth-child(2) {
+		transform: scale(1) translateX(-11px);
+		transition: 0.2s ease transform 0.1s;
+	}
+	.social li:nth-child(3) {
+		transform: scale(1) translateX(-3px);
+		transition: 0.2s ease transform 0.15s;
+	}
+	.social li a {opacity: 1;}
+}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper" id="header">
+		<div class="container">
+			<header>
+				<div class="logo">
+					<a href="index.html">LUNECIA</a>
+				</div>
+				<ul class="social">
+					<li><a href="https://www.facebook.com/Runezu" class="fb"></a></li>
+					<li><a href="https://www.instagram.com/runezu/" class="ig"></a></li>
+					<li><a href="https://medium.com/@lunecia" class="medium"></a></li>
+				</ul>
+			</header>
+		</div>
+	</div>
+	<div class="wrapper" id="about">
+		<div class="container">
+			<div class="box">
+				<p>Frontend Developer</p>
+				<p>Bangkok, Thailand</p>
+			</div>
+			<div class="box">
+				<p>Isobar Thailand</p>
+				<p>April 2012 - Present</p>
+			</div>
+			<div class="box">
+				<p>College of Arts, Media and Technology, Chiangmai University </p>
+				<p>June 2008 - Febuary 2011</p>
+			</div>
+
+			<a href="mailto:happie.lu@gmail.com">happie.lu@gmail.com</a>
+		</div>
+	</div>
+</body>
+</html>
